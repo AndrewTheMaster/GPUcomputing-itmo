@@ -1,0 +1,14 @@
+========= COMPUTE-SANITIZER
+Running main() from /builddir/build/BUILD/gtest-1.15.2-build/googletest-1.15.2/googletest/src/gtest_main.cc
+Note: Google Test filter = Student.KnownExample
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Student
+[ RUN      ] Student.KnownExample
+[       OK ] Student.KnownExample (199 ms)
+[----------] 1 test from Student (200 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (200 ms total)
+[  PASSED  ] 1 test.
+========= ERROR SUMMARY: 0 errors

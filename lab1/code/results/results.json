@@ -1,0 +1,1287 @@
+{
+  "stage1": {
+    "uname": "Linux fedora 7.2.8-100.fc43.x86_64 #1 SMP PREEMPT_DYNAMIC Fri Sep 25 20:59:32 UTC 2026 x86_64 GNU/Linux",
+    "lscpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           39 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  8\nOn-line CPU(s) list:                     0-7\nVendor ID:                               GenuineIntel\nModel name:                              Intel(R) Core(TM) i7-4710HQ CPU @ 2.50GHz\nCPU family:                              6\nModel:                                   60\nThread(s) per core:                      2\nCore(s) per socket:                      4\nSocket(s):                               1\nStepping:                                3\nCPU(s) scaling MHz:                      94%\nCPU max MHz:                             3500.0000\nCPU min MHz:                             800.0000\nBogoMIPS:                                4988.64\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt dtherm ida arat pln pts vnmi md_clear flush_l1d\nVirtualization:                          VT-x\nL1d cache:                               128 KiB (4 instances)\nL1i cache:                               128 KiB (4 instances)\nL2 cache:                                1 MiB (4 instances)\nL3 cache:                                6 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-7\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             KVM: Mitigation: Split huge pages\nVulnerability L1tf:                      Mitigation; PTE Inversion; VMX conditional cache flushes, SMT vulnerable\nVulnerability Mds:                       Mitigation; Clear CPU buffers; SMT vulnerable\nVulnerability Meltdown:                  Mitigation; PTI\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP conditional; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Mitigation; Microcode\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Mitigation; IBPB before exit to userspace",
+    "lscpu_cache": "NAME ONE-SIZE ALL-SIZE WAYS TYPE        LEVEL SETS PHY-LINE COHERENCY-SIZE\nL1d       32K     128K    8 Data            1   64        1             64\nL1i       32K     128K    8 Instruction     1   64        1             64\nL2       256K       1M    8 Unified         2  512        1             64\nL3         6M       6M   12 Unified         3 8192        1             64",
+    "pagesize": "4096",
+    "gxx": "g++ (GCC) 15.3.1 20260722 (Red Hat 15.3.1-1)",
+    "perf": "perf version 7.2.8-100.fc43.x86_64",
+    "paranoid": "1",
+    "hw_events": "legacy hardware:\n  branch-instructions\n       [Retired branch instructions [This event is an alias of branches].\n        Unit: cpu]\n  branch-misses\n       [Mispredicted branch instructions. Unit: cpu]\n  branches\n       [Retired branch instructions [This event is an alias of\n        branch-instructions]. Unit: cpu]\n  bus-cycles\n       [Bus cycles,which can be different from total cycles. Unit: cpu]\n  cache-misses\n       [Cache misses. Usually this indicates Last Level Cache misses; this is\n        intended to be used in conjunction with the\n        PERF_COUNT_HW_CACHE_REFERENCES event to calculate cache miss rates.\n        Unit: cpu]\n  cache-references\n       [Cache accesses. Usually this indicates Last Level Cache accesses but\n        this may vary depending on your CPU. This may include prefetches and\n        coherency messages; again this depends on the design of your CPU.\n        Unit: cpu]\n  cpu-cycles\n       [Total cycles. Be wary of what happens during CPU frequency scaling\n        [This event is an alias of cycles]. Unit: cpu]\n  cycles\n       [Total cycles. Be wary of what happens during CPU frequency scaling\n        [This event is an alias of cpu-cycles]. Unit: cpu]\n  instructions\n       [Retired instructions. Be careful,these can be affected by various\n        issues,most notably hardware interrupt counts. Unit: cpu]\n  ref-cycles\n       [Total cycles; not affected by CPU frequency scaling. Unit: cpu]",
+    "cache_events": "legacy cache:\n  branch-load-misses\n       [Branch prediction unit read misses. Unit: cpu]\n  branch-loads\n       [Branch prediction unit read accesses. Unit: cpu]\n  dtlb-load-misses\n       [Data TLB read misses. Unit: cpu]\n  dtlb-loads\n       [Data TLB read accesses. Unit: cpu]\n  dtlb-store-misses\n       [Data TLB write misses. Unit: cpu]\n  dtlb-stores\n       [Data TLB write accesses. Unit: cpu]\n  itlb-load-misses\n       [Instruction TLB read misses. Unit: cpu]\n  itlb-loads\n       [Instruction TLB read accesses. Unit: cpu]\n  l1-dcache-load-misses\n       [Level 1 data cache read misses. Unit: cpu]\n  l1-dcache-loads\n       [Level 1 data cache read accesses. Unit: cpu]\n  l1-dcache-stores\n       [Level 1 data cache write accesses. Unit: cpu]\n  l1-icache-load-misses\n       [Level 1 instruction cache read misses. Unit: cpu]\n  llc-load-misses\n       [Last level cache read misses. Unit: cpu]\n  llc-loads\n       [Last level cache read accesses. Unit: cpu]\n  llc-store-misses\n       [Last level cache write misses. Unit: cpu]\n  llc-stores\n       [Last level cache write accesses. Unit: cpu]\n  node-load-misses\n       [Local memory read misses. Unit: cpu]\n  node-loads\n       [Local memory read accesses. Unit: cpu]\n  node-store-misses\n       [Local memory write misses. Unit: cpu]\n  node-stores\n       [Local memory write accesses. Unit: cpu]"
+  },
+  "stage2": {
+    "args": [
+      "1000000",
+      "100",
+      "1"
+    ],
+    "basic": {
+      "task-clock": 457.527618,
+      "task-clock_var": 0.46,
+      "cycles": 1498536515.0,
+      "cycles_var": 0.52,
+      "instructions": 287076415.0,
+      "instructions_var": 0.11,
+      "cache-references": 10658340.0,
+      "cache-references_var": 0.42,
+      "cache-misses": 6508829.0,
+      "cache-misses_var": 0.51
+    },
+    "l1": {
+      "task-clock": 464.25775,
+      "task-clock_var": 2.05,
+      "cycles": 1477134516.0,
+      "cycles_var": 0.55,
+      "instructions": 287382705.0,
+      "instructions_var": 0.2,
+      "L1-dcache-loads": 59565763.0,
+      "L1-dcache-loads_var": 0.22,
+      "L1-dcache-load-misses": 13752429.0,
+      "L1-dcache-load-misses_var": 0.04
+    },
+    "llc": {
+      "task-clock": 461.415081,
+      "task-clock_var": 0.96,
+      "cycles": 1416096588.0,
+      "cycles_var": 2.45,
+      "instructions": 286934099.0,
+      "instructions_var": 0.09,
+      "LLC-loads": 10219554.0,
+      "LLC-loads_var": 0.38,
+      "LLC-load-misses": 6337650.0,
+      "LLC-load-misses_var": 0.33
+    }
+  },
+  "stage3": {
+    "perf_r10": {
+      "task-clock": 453.561431,
+      "task-clock_var": 0.46,
+      "cycles": 1463622773.0,
+      "cycles_var": 0.89,
+      "instructions": 287175297.0,
+      "instructions_var": 0.08,
+      "cache-references": 10581015.0,
+      "cache-references_var": 0.22,
+      "cache-misses": 6443724.0,
+      "cache-misses_var": 0.39
+    },
+    "perf_r10_taskset": {
+      "task-clock": 444.893613,
+      "task-clock_var": 0.22,
+      "cycles": 1451079000.0,
+      "cycles_var": 0.28,
+      "instructions": 287553812.0,
+      "instructions_var": 0.02,
+      "cache-references": 10630995.0,
+      "cache-references_var": 0.14,
+      "cache-misses": 6456656.0,
+      "cache-misses_var": 0.29
+    },
+    "individual": [
+      {
+        "task-clock": 460.286755,
+        "cycles": 1489113905.0
+      },
+      {
+        "task-clock": 444.900811,
+        "cycles": 1430616556.0
+      },
+      {
+        "task-clock": 449.169929,
+        "cycles": 1291543147.0
+      },
+      {
+        "task-clock": 449.436061,
+        "cycles": 1317789554.0
+      },
+      {
+        "task-clock": 463.810232,
+        "cycles": 1492668681.0
+      },
+      {
+        "task-clock": 449.39234,
+        "cycles": 1469172637.0
+      },
+      {
+        "task-clock": 458.831811,
+        "cycles": 1498918837.0
+      },
+      {
+        "task-clock": 451.04187,
+        "cycles": 1472360185.0
+      },
+      {
+        "task-clock": 455.201162,
+        "cycles": 1484611557.0
+      },
+      {
+        "task-clock": 452.187324,
+        "cycles": 1482826332.0
+      }
+    ]
+  },
+  "stage4": [
+    {
+      "N": 256,
+      "repeats": 781250,
+      "bytes": 4096,
+      "basic": {
+        "task-clock": 40.213827,
+        "task-clock_var": 2.98,
+        "cycles": 130911244.0,
+        "cycles_var": 2.48,
+        "instructions": 458123989.0,
+        "instructions_var": 0.0,
+        "cache-references": 86724.0,
+        "cache-references_var": 3.25,
+        "cache-misses": 32507.0,
+        "cache-misses_var": 8.82
+      },
+      "l1": {
+        "task-clock": 42.40506,
+        "task-clock_var": 5.54,
+        "cycles": 137166619.0,
+        "cycles_var": 4.94,
+        "instructions": 458172949.0,
+        "instructions_var": 0.0,
+        "L1-dcache-loads": 101390099.0,
+        "L1-dcache-loads_var": 0.01,
+        "L1-dcache-load-misses": 84035.0,
+        "L1-dcache-load-misses_var": 2.89
+      },
+      "llc": {
+        "task-clock": 40.497955,
+        "task-clock_var": 1.5,
+        "cycles": 132448426.0,
+        "cycles_var": 1.21,
+        "instructions": 458118879.0,
+        "instructions_var": 0.0,
+        "LLC-loads": 46159.0,
+        "LLC-loads_var": 4.53,
+        "LLC-load-misses": 24238.0,
+        "LLC-load-misses_var": 7.91
+      }
+    },
+    {
+      "N": 1024,
+      "repeats": 195312,
+      "bytes": 16384,
+      "basic": {
+        "task-clock": 48.10333,
+        "task-clock_var": 0.53,
+        "cycles": 158251003.0,
+        "cycles_var": 0.43,
+        "instructions": 456146016.0,
+        "instructions_var": 0.0,
+        "cache-references": 91435.0,
+        "cache-references_var": 1.49,
+        "cache-misses": 35027.0,
+        "cache-misses_var": 3.72
+      },
+      "l1": {
+        "task-clock": 49.514401,
+        "task-clock_var": 2.44,
+        "cycles": 162562932.0,
+        "cycles_var": 2.01,
+        "instructions": 456162525.0,
+        "instructions_var": 0.0,
+        "L1-dcache-loads": 101394639.0,
+        "L1-dcache-loads_var": 0.01,
+        "L1-dcache-load-misses": 125175.0,
+        "L1-dcache-load-misses_var": 10.9
+      },
+      "llc": {
+        "task-clock": 47.033232,
+        "task-clock_var": 2.61,
+        "cycles": 154022829.0,
+        "cycles_var": 1.68,
+        "instructions": 456190626.0,
+        "instructions_var": 0.01,
+        "LLC-loads": 45563.0,
+        "LLC-loads_var": 4.9,
+        "LLC-load-misses": 22322.0,
+        "LLC-load-misses_var": 9.97
+      }
+    },
+    {
+      "N": 2048,
+      "repeats": 97656,
+      "bytes": 32768,
+      "basic": {
+        "task-clock": 48.679278,
+        "task-clock_var": 1.54,
+        "cycles": 157302200.0,
+        "cycles_var": 1.03,
+        "instructions": 455879289.0,
+        "instructions_var": 0.0,
+        "cache-references": 89516.0,
+        "cache-references_var": 1.92,
+        "cache-misses": 33629.0,
+        "cache-misses_var": 1.86
+      },
+      "l1": {
+        "task-clock": 49.077422,
+        "task-clock_var": 3.2,
+        "cycles": 160567596.0,
+        "cycles_var": 1.91,
+        "instructions": 455910851.0,
+        "instructions_var": 0.01,
+        "L1-dcache-loads": 101406714.0,
+        "L1-dcache-loads_var": 0.01,
+        "L1-dcache-load-misses": 1819820.0,
+        "L1-dcache-load-misses_var": 7.15
+      },
+      "llc": {
+        "task-clock": 49.13352,
+        "task-clock_var": 1.72,
+        "cycles": 155938888.0,
+        "cycles_var": 1.91,
+        "instructions": 455928525.0,
+        "instructions_var": 0.0,
+        "LLC-loads": 46931.0,
+        "LLC-loads_var": 3.99,
+        "LLC-load-misses": 23965.0,
+        "LLC-load-misses_var": 12.46
+      }
+    },
+    {
+      "N": 4096,
+      "repeats": 48828,
+      "bytes": 65536,
+      "basic": {
+        "task-clock": 58.702985,
+        "task-clock_var": 0.6,
+        "cycles": 191722883.0,
+        "cycles_var": 1.63,
+        "instructions": 455879226.0,
+        "instructions_var": 0.0,
+        "cache-references": 96721.0,
+        "cache-references_var": 3.16,
+        "cache-misses": 32395.0,
+        "cache-misses_var": 6.82
+      },
+      "l1": {
+        "task-clock": 57.293298,
+        "task-clock_var": 2.7,
+        "cycles": 184332159.0,
+        "cycles_var": 1.38,
+        "instructions": 455878890.0,
+        "instructions_var": 0.0,
+        "L1-dcache-loads": 101426724.0,
+        "L1-dcache-loads_var": 0.0,
+        "L1-dcache-load-misses": 25499978.0,
+        "L1-dcache-load-misses_var": 0.01
+      },
+      "llc": {
+        "task-clock": 59.134807,
+        "task-clock_var": 0.8,
+        "cycles": 192427751.0,
+        "cycles_var": 0.36,
+        "instructions": 455873051.0,
+        "instructions_var": 0.0,
+        "LLC-loads": 49672.0,
+        "LLC-loads_var": 2.54,
+        "LLC-load-misses": 22623.0,
+        "LLC-load-misses_var": 1.53
+      }
+    },
+    {
+      "N": 8192,
+      "repeats": 24414,
+      "bytes": 131072,
+      "basic": {
+        "task-clock": 59.037248,
+        "task-clock_var": 0.86,
+        "cycles": 193637311.0,
+        "cycles_var": 0.18,
+        "instructions": 456011100.0,
+        "instructions_var": 0.0,
+        "cache-references": 125049.0,
+        "cache-references_var": 7.33,
+        "cache-misses": 37961.0,
+        "cache-misses_var": 8.0
+      },
+      "l1": {
+        "task-clock": 63.070112,
+        "task-clock_var": 1.93,
+        "cycles": 204038004.0,
+        "cycles_var": 1.43,
+        "instructions": 456028766.0,
+        "instructions_var": 0.0,
+        "L1-dcache-loads": 101438167.0,
+        "L1-dcache-loads_var": 0.01,
+        "L1-dcache-load-misses": 25480798.0,
+        "L1-dcache-load-misses_var": 0.04
+      },
+      "llc": {
+        "task-clock": 65.78676,
+        "task-clock_var": 10.45,
+        "cycles": 215320006.0,
+        "cycles_var": 11.12,
+        "instructions": 456105072.0,
+        "instructions_var": 0.02,
+        "LLC-loads": 74239.0,
+        "LLC-loads_var": 8.71,
+        "LLC-load-misses": 23428.0,
+        "LLC-load-misses_var": 1.87
+      }
+    },
+    {
+      "N": 16384,
+      "repeats": 12207,
+      "bytes": 262144,
+      "basic": {
+        "task-clock": 66.11881,
+        "task-clock_var": 4.43,
+        "cycles": 213745987.0,
+        "cycles_var": 4.82,
+        "instructions": 456476301.0,
+        "instructions_var": 0.01,
+        "cache-references": 2765834.0,
+        "cache-references_var": 15.93,
+        "cache-misses": 37320.0,
+        "cache-misses_var": 9.14
+      },
+      "l1": {
+        "task-clock": 68.151009,
+        "task-clock_var": 2.54,
+        "cycles": 218253889.0,
+        "cycles_var": 0.96,
+        "instructions": 456510330.0,
+        "instructions_var": 0.01,
+        "L1-dcache-loads": 101503354.0,
+        "L1-dcache-loads_var": 0.02,
+        "L1-dcache-load-misses": 25569799.0,
+        "L1-dcache-load-misses_var": 0.07
+      },
+      "llc": {
+        "task-clock": 74.239395,
+        "task-clock_var": 2.75,
+        "cycles": 226470452.0,
+        "cycles_var": 2.34,
+        "instructions": 456590907.0,
+        "instructions_var": 0.01,
+        "LLC-loads": 4042326.0,
+        "LLC-loads_var": 7.45,
+        "LLC-load-misses": 25222.0,
+        "LLC-load-misses_var": 1.81
+      }
+    },
+    {
+      "N": 32768,
+      "repeats": 6104,
+      "bytes": 524288,
+      "basic": {
+        "task-clock": 87.575956,
+        "task-clock_var": 0.95,
+        "cycles": 266939654.0,
+        "cycles_var": 0.73,
+        "instructions": 457544217.0,
+        "instructions_var": 0.0,
+        "cache-references": 8308171.0,
+        "cache-references_var": 2.51,
+        "cache-misses": 40055.0,
+        "cache-misses_var": 5.11
+      },
+      "l1": {
+        "task-clock": 87.570615,
+        "task-clock_var": 0.51,
+        "cycles": 270411053.0,
+        "cycles_var": 1.09,
+        "instructions": 457622717.0,
+        "instructions_var": 0.01,
+        "L1-dcache-loads": 101713300.0,
+        "L1-dcache-loads_var": 0.02,
+        "L1-dcache-load-misses": 25484052.0,
+        "L1-dcache-load-misses_var": 0.03
+      },
+      "llc": {
+        "task-clock": 82.169422,
+        "task-clock_var": 0.26,
+        "cycles": 269627322.0,
+        "cycles_var": 0.72,
+        "instructions": 457482550.0,
+        "instructions_var": 0.0,
+        "LLC-loads": 10589684.0,
+        "LLC-loads_var": 0.51,
+        "LLC-load-misses": 24690.0,
+        "LLC-load-misses_var": 3.2
+      }
+    },
+    {
+      "N": 65536,
+      "repeats": 3052,
+      "bytes": 1048576,
+      "basic": {
+        "task-clock": 80.899685,
+        "task-clock_var": 0.49,
+        "cycles": 268272266.0,
+        "cycles_var": 0.36,
+        "instructions": 459176036.0,
+        "instructions_var": 0.0,
+        "cache-references": 10405135.0,
+        "cache-references_var": 9.76,
+        "cache-misses": 49141.0,
+        "cache-misses_var": 8.49
+      },
+      "l1": {
+        "task-clock": 85.878592,
+        "task-clock_var": 2.13,
+        "cycles": 273201044.0,
+        "cycles_var": 1.83,
+        "instructions": 459187436.0,
+        "instructions_var": 0.01,
+        "L1-dcache-loads": 101902917.0,
+        "L1-dcache-loads_var": 0.02,
+        "L1-dcache-load-misses": 25519314.0,
+        "L1-dcache-load-misses_var": 0.04
+      },
+      "llc": {
+        "task-clock": 89.8195,
+        "task-clock_var": 1.02,
+        "cycles": 273152765.0,
+        "cycles_var": 0.64,
+        "instructions": 459265273.0,
+        "instructions_var": 0.0,
+        "LLC-loads": 9308997.0,
+        "LLC-loads_var": 8.42,
+        "LLC-load-misses": 32873.0,
+        "LLC-load-misses_var": 8.33
+      }
+    },
+    {
+      "N": 131072,
+      "repeats": 1526,
+      "bytes": 2097152,
+      "basic": {
+        "task-clock": 108.569662,
+        "task-clock_var": 3.14,
+        "cycles": 326437788.0,
+        "cycles_var": 3.07,
+        "instructions": 462914640.0,
+        "instructions_var": 0.01,
+        "cache-references": 9363985.0,
+        "cache-references_var": 2.19,
+        "cache-misses": 192802.0,
+        "cache-misses_var": 20.11
+      },
+      "l1": {
+        "task-clock": 103.369787,
+        "task-clock_var": 6.53,
+        "cycles": 336911753.0,
+        "cycles_var": 6.12,
+        "instructions": 462886723.0,
+        "instructions_var": 0.02,
+        "L1-dcache-loads": 102445465.0,
+        "L1-dcache-loads_var": 0.01,
+        "L1-dcache-load-misses": 25572615.0,
+        "L1-dcache-load-misses_var": 0.03
+      },
+      "llc": {
+        "task-clock": 99.469557,
+        "task-clock_var": 1.55,
+        "cycles": 325327970.0,
+        "cycles_var": 1.57,
+        "instructions": 462813971.0,
+        "instructions_var": 0.01,
+        "LLC-loads": 10504147.0,
+        "LLC-loads_var": 7.09,
+        "LLC-load-misses": 124728.0,
+        "LLC-load-misses_var": 10.5
+      }
+    },
+    {
+      "N": 262144,
+      "repeats": 763,
+      "bytes": 4194304,
+      "basic": {
+        "task-clock": 487.287508,
+        "task-clock_var": 4.09,
+        "cycles": 1539992505.0,
+        "cycles_var": 3.36,
+        "instructions": 472512260.0,
+        "instructions_var": 0.04,
+        "cache-references": 16041693.0,
+        "cache-references_var": 1.69,
+        "cache-misses": 5533351.0,
+        "cache-misses_var": 5.92
+      },
+      "l1": {
+        "task-clock": 485.662501,
+        "task-clock_var": 3.04,
+        "cycles": 1555423228.0,
+        "cycles_var": 2.21,
+        "instructions": 472642660.0,
+        "instructions_var": 0.04,
+        "L1-dcache-loads": 104070029.0,
+        "L1-dcache-loads_var": 0.05,
+        "L1-dcache-load-misses": 25804778.0,
+        "L1-dcache-load-misses_var": 0.04
+      },
+      "llc": {
+        "task-clock": 497.191278,
+        "task-clock_var": 4.1,
+        "cycles": 1588539880.0,
+        "cycles_var": 3.73,
+        "instructions": 472792651.0,
+        "instructions_var": 0.05,
+        "LLC-loads": 15618047.0,
+        "LLC-loads_var": 1.83,
+        "LLC-load-misses": 5427698.0,
+        "LLC-load-misses_var": 4.5
+      }
+    },
+    {
+      "N": 524288,
+      "repeats": 381,
+      "bytes": 8388608,
+      "basic": {
+        "task-clock": 802.697515,
+        "task-clock_var": 0.43,
+        "cycles": 2634519576.0,
+        "cycles_var": 0.28,
+        "instructions": 488123188.0,
+        "instructions_var": 0.05,
+        "cache-references": 20060553.0,
+        "cache-references_var": 0.25,
+        "cache-misses": 11758406.0,
+        "cache-misses_var": 0.7
+      },
+      "l1": {
+        "task-clock": 812.214122,
+        "task-clock_var": 1.23,
+        "cycles": 2557529384.0,
+        "cycles_var": 3.6,
+        "instructions": 488096492.0,
+        "instructions_var": 0.04,
+        "L1-dcache-loads": 106351012.0,
+        "L1-dcache-loads_var": 0.03,
+        "L1-dcache-load-misses": 25988090.0,
+        "L1-dcache-load-misses_var": 0.05
+      },
+      "llc": {
+        "task-clock": 808.46309,
+        "task-clock_var": 1.24,
+        "cycles": 2625960072.0,
+        "cycles_var": 2.04,
+        "instructions": 488649808.0,
+        "instructions_var": 0.04,
+        "LLC-loads": 19589343.0,
+        "LLC-loads_var": 0.7,
+        "LLC-load-misses": 11438085.0,
+        "LLC-load-misses_var": 2.76
+      }
+    },
+    {
+      "N": 1048576,
+      "repeats": 191,
+      "bytes": 16777216,
+      "basic": {
+        "task-clock": 858.864563,
+        "task-clock_var": 0.33,
+        "cycles": 2704142325.0,
+        "cycles_var": 3.98,
+        "instructions": 517681745.0,
+        "instructions_var": 0.12,
+        "cache-references": 20567140.0,
+        "cache-references_var": 0.55,
+        "cache-misses": 12489573.0,
+        "cache-misses_var": 0.56
+      },
+      "l1": {
+        "task-clock": 852.141356,
+        "task-clock_var": 0.78,
+        "cycles": 2797980617.0,
+        "cycles_var": 0.75,
+        "instructions": 517401919.0,
+        "instructions_var": 0.12,
+        "L1-dcache-loads": 110431728.0,
+        "L1-dcache-loads_var": 0.1,
+        "L1-dcache-load-misses": 26471187.0,
+        "L1-dcache-load-misses_var": 0.02
+      },
+      "llc": {
+        "task-clock": 873.010929,
+        "task-clock_var": 0.35,
+        "cycles": 2785275966.0,
+        "cycles_var": 2.46,
+        "instructions": 518113949.0,
+        "instructions_var": 0.07,
+        "LLC-loads": 20009042.0,
+        "LLC-loads_var": 0.44,
+        "LLC-load-misses": 12273436.0,
+        "LLC-load-misses_var": 0.84
+      }
+    },
+    {
+      "N": 4194304,
+      "repeats": 48,
+      "bytes": 67108864,
+      "basic": {
+        "task-clock": 995.896088,
+        "task-clock_var": 0.49,
+        "cycles": 3199403449.0,
+        "cycles_var": 1.74,
+        "instructions": 691224560.0,
+        "instructions_var": 0.39,
+        "cache-references": 22368335.0,
+        "cache-references_var": 0.29,
+        "cache-misses": 13690753.0,
+        "cache-misses_var": 0.5
+      },
+      "l1": {
+        "task-clock": 999.185765,
+        "task-clock_var": 0.62,
+        "cycles": 3270788689.0,
+        "cycles_var": 0.39,
+        "instructions": 692471038.0,
+        "instructions_var": 0.16,
+        "L1-dcache-loads": 135120332.0,
+        "L1-dcache-loads_var": 0.18,
+        "L1-dcache-load-misses": 29663749.0,
+        "L1-dcache-load-misses_var": 0.09
+      },
+      "llc": {
+        "task-clock": 1006.594491,
+        "task-clock_var": 0.43,
+        "cycles": 3211338903.0,
+        "cycles_var": 2.07,
+        "instructions": 690943463.0,
+        "instructions_var": 0.11,
+        "LLC-loads": 21230044.0,
+        "LLC-loads_var": 0.2,
+        "LLC-load-misses": 13088939.0,
+        "LLC-load-misses_var": 0.09
+      }
+    }
+  ],
+  "stage5": [
+    {
+      "N": 10000000,
+      "stride": 1,
+      "repeats": 20,
+      "accesses": 200000000,
+      "basic": {
+        "task-clock": 1221.576783,
+        "task-clock_var": 0.51,
+        "cycles": 3717547300.0,
+        "cycles_var": 2.24,
+        "instructions": 1004940436.0,
+        "instructions_var": 0.25,
+        "cache-references": 25117323.0,
+        "cache-references_var": 0.31,
+        "cache-misses": 15484441.0,
+        "cache-misses_var": 0.24
+      },
+      "l1": {
+        "task-clock": 1244.520357,
+        "task-clock_var": 0.77,
+        "cycles": 3937743100.0,
+        "cycles_var": 1.91,
+        "instructions": 1009585125.0,
+        "instructions_var": 0.24,
+        "L1-dcache-loads": 179059315.0,
+        "L1-dcache-loads_var": 0.3,
+        "L1-dcache-load-misses": 34893114.0,
+        "L1-dcache-load-misses_var": 0.08
+      }
+    },
+    {
+      "N": 10000000,
+      "stride": 2,
+      "repeats": 40,
+      "accesses": 200000000,
+      "basic": {
+        "task-clock": 3470.362493,
+        "task-clock_var": 0.33,
+        "cycles": 11350671087.0,
+        "cycles_var": 0.41,
+        "instructions": 1936229466.0,
+        "instructions_var": 0.06,
+        "cache-references": 87672002.0,
+        "cache-references_var": 0.19,
+        "cache-misses": 52278331.0,
+        "cache-misses_var": 0.18
+      },
+      "l1": {
+        "task-clock": 3501.472983,
+        "task-clock_var": 0.61,
+        "cycles": 10795000328.0,
+        "cycles_var": 2.61,
+        "instructions": 1936244991.0,
+        "instructions_var": 0.08,
+        "L1-dcache-loads": 468008245.0,
+        "L1-dcache-loads_var": 0.07,
+        "L1-dcache-load-misses": 108611141.0,
+        "L1-dcache-load-misses_var": 0.03
+      }
+    },
+    {
+      "N": 10000000,
+      "stride": 4,
+      "repeats": 80,
+      "accesses": 200000000,
+      "basic": {
+        "task-clock": 6292.699414,
+        "task-clock_var": 0.21,
+        "cycles": 19831111441.0,
+        "cycles_var": 1.3,
+        "instructions": 1951404593.0,
+        "instructions_var": 0.04,
+        "cache-references": 189587543.0,
+        "cache-references_var": 0.13,
+        "cache-misses": 106271894.0,
+        "cache-misses_var": 0.06
+      },
+      "l1": {
+        "task-clock": 6252.187643,
+        "task-clock_var": 0.13,
+        "cycles": 19365319159.0,
+        "cycles_var": 1.5,
+        "instructions": 1950093728.0,
+        "instructions_var": 0.02,
+        "L1-dcache-loads": 465647026.0,
+        "L1-dcache-loads_var": 0.09,
+        "L1-dcache-load-misses": 209789278.0,
+        "L1-dcache-load-misses_var": 0.01
+      }
+    },
+    {
+      "N": 10000000,
+      "stride": 8,
+      "repeats": 160,
+      "accesses": 200000000,
+      "basic": {
+        "task-clock": 12098.953627,
+        "task-clock_var": 0.11,
+        "cycles": 37599950429.0,
+        "cycles_var": 1.86,
+        "instructions": 1991526515.0,
+        "instructions_var": 0.03,
+        "cache-references": 375383662.0,
+        "cache-references_var": 0.02,
+        "cache-misses": 230327291.0,
+        "cache-misses_var": 0.1
+      },
+      "l1": {
+        "task-clock": 12119.875724,
+        "task-clock_var": 0.18,
+        "cycles": 37976725285.0,
+        "cycles_var": 0.75,
+        "instructions": 1994337970.0,
+        "instructions_var": 0.05,
+        "L1-dcache-loads": 458169080.0,
+        "L1-dcache-loads_var": 0.2,
+        "L1-dcache-load-misses": 412493273.0,
+        "L1-dcache-load-misses_var": 0.02
+      }
+    },
+    {
+      "N": 10000000,
+      "stride": 16,
+      "repeats": 320,
+      "accesses": 200000000,
+      "basic": {
+        "task-clock": 15498.42244,
+        "task-clock_var": 0.11,
+        "cycles": 49413185236.0,
+        "cycles_var": 0.68,
+        "instructions": 2018666908.0,
+        "instructions_var": 0.05,
+        "cache-references": 401061014.0,
+        "cache-references_var": 0.03,
+        "cache-misses": 364870998.0,
+        "cache-misses_var": 0.05
+      },
+      "l1": {
+        "task-clock": 15860.74163,
+        "task-clock_var": 0.14,
+        "cycles": 50703992256.0,
+        "cycles_var": 0.34,
+        "instructions": 2021461461.0,
+        "instructions_var": 0.04,
+        "L1-dcache-loads": 461055151.0,
+        "L1-dcache-loads_var": 0.14,
+        "L1-dcache-load-misses": 412968978.0,
+        "L1-dcache-load-misses_var": 0.03
+      }
+    },
+    {
+      "N": 10000000,
+      "stride": 32,
+      "repeats": 640,
+      "accesses": 200000000,
+      "basic": {
+        "task-clock": 17727.881175,
+        "task-clock_var": 0.36,
+        "cycles": 56591358497.0,
+        "cycles_var": 0.7,
+        "instructions": 2033881146.0,
+        "instructions_var": 0.07,
+        "cache-references": 408745147.0,
+        "cache-references_var": 0.01,
+        "cache-misses": 396985818.0,
+        "cache-misses_var": 0.01
+      },
+      "l1": {
+        "task-clock": 17403.496526,
+        "task-clock_var": 1.09,
+        "cycles": 55348757217.0,
+        "cycles_var": 1.3,
+        "instructions": 2034671490.0,
+        "instructions_var": 0.07,
+        "L1-dcache-loads": 457392049.0,
+        "L1-dcache-loads_var": 0.46,
+        "L1-dcache-load-misses": 415228671.0,
+        "L1-dcache-load-misses_var": 0.03
+      }
+    },
+    {
+      "N": 10000000,
+      "stride": 64,
+      "repeats": 1280,
+      "accesses": 200000000,
+      "basic": {
+        "task-clock": 15435.371322,
+        "task-clock_var": 0.1,
+        "cycles": 49009478069.0,
+        "cycles_var": 0.62,
+        "instructions": 2018226518.0,
+        "instructions_var": 0.05,
+        "cache-references": 413956135.0,
+        "cache-references_var": 0.03,
+        "cache-misses": 408654208.0,
+        "cache-misses_var": 0.01
+      },
+      "l1": {
+        "task-clock": 15421.674702,
+        "task-clock_var": 0.62,
+        "cycles": 48141354805.0,
+        "cycles_var": 0.79,
+        "instructions": 2018834453.0,
+        "instructions_var": 0.12,
+        "L1-dcache-loads": 461167850.0,
+        "L1-dcache-loads_var": 0.18,
+        "L1-dcache-load-misses": 432217822.0,
+        "L1-dcache-load-misses_var": 0.05
+      }
+    }
+  ],
+  "stage6": [
+    {
+      "N": 1000000,
+      "repeats": 200,
+      "type": "float",
+      "bytes": 8000000,
+      "basic": {
+        "task-clock": 389.691622,
+        "task-clock_var": 3.96,
+        "cycles": 1260954424.0,
+        "cycles_var": 4.1,
+        "instructions": 275016382.0,
+        "instructions_var": 0.09,
+        "cache-references": 10035894.0,
+        "cache-references_var": 0.98,
+        "cache-misses": 5593594.0,
+        "cache-misses_var": 3.42
+      },
+      "l1": {
+        "task-clock": 376.211759,
+        "task-clock_var": 2.01,
+        "cycles": 1208348035.0,
+        "cycles_var": 1.95,
+        "instructions": 274938838.0,
+        "instructions_var": 0.04,
+        "L1-dcache-loads": 55385360.0,
+        "L1-dcache-loads_var": 0.01,
+        "L1-dcache-load-misses": 13280626.0,
+        "L1-dcache-load-misses_var": 0.05
+      },
+      "llc": {
+        "task-clock": 384.121064,
+        "task-clock_var": 2.63,
+        "cycles": 1217643223.0,
+        "cycles_var": 4.13,
+        "instructions": 274983691.0,
+        "instructions_var": 0.08,
+        "LLC-loads": 9885813.0,
+        "LLC-loads_var": 0.77,
+        "LLC-load-misses": 5569861.0,
+        "LLC-load-misses_var": 2.61
+      }
+    },
+    {
+      "N": 1000000,
+      "repeats": 200,
+      "type": "double",
+      "bytes": 16000000,
+      "basic": {
+        "task-clock": 806.82964,
+        "task-clock_var": 2.61,
+        "cycles": 2475386364.0,
+        "cycles_var": 5.49,
+        "instructions": 515285485.0,
+        "instructions_var": 0.14,
+        "cache-references": 20417099.0,
+        "cache-references_var": 0.78,
+        "cache-misses": 11865599.0,
+        "cache-misses_var": 1.81
+      },
+      "l1": {
+        "task-clock": 822.064231,
+        "task-clock_var": 2.24,
+        "cycles": 2578034685.0,
+        "cycles_var": 4.57,
+        "instructions": 514900748.0,
+        "instructions_var": 0.02,
+        "L1-dcache-loads": 110180056.0,
+        "L1-dcache-loads_var": 0.05,
+        "L1-dcache-load-misses": 26509072.0,
+        "L1-dcache-load-misses_var": 0.02
+      },
+      "llc": {
+        "task-clock": 826.827275,
+        "task-clock_var": 1.98,
+        "cycles": 2552902202.0,
+        "cycles_var": 3.32,
+        "instructions": 515969129.0,
+        "instructions_var": 0.1,
+        "LLC-loads": 19913714.0,
+        "LLC-loads_var": 0.75,
+        "LLC-load-misses": 11857531.0,
+        "LLC-load-misses_var": 1.65
+      }
+    },
+    {
+      "N": 4000000,
+      "repeats": 50,
+      "type": "float",
+      "bytes": 32000000,
+      "basic": {
+        "task-clock": 506.738133,
+        "task-clock_var": 2.54,
+        "cycles": 1591253702.0,
+        "cycles_var": 4.61,
+        "instructions": 403313675.0,
+        "instructions_var": 0.18,
+        "cache-references": 10967285.0,
+        "cache-references_var": 0.43,
+        "cache-misses": 6617451.0,
+        "cache-misses_var": 0.57
+      },
+      "l1": {
+        "task-clock": 468.126714,
+        "task-clock_var": 3.89,
+        "cycles": 1521164553.0,
+        "cycles_var": 3.69,
+        "instructions": 402195240.0,
+        "instructions_var": 0.41,
+        "L1-dcache-loads": 65947923.0,
+        "L1-dcache-loads_var": 0.58,
+        "L1-dcache-load-misses": 14698704.0,
+        "L1-dcache-load-misses_var": 0.23
+      },
+      "llc": {
+        "task-clock": 472.700085,
+        "task-clock_var": 1.52,
+        "cycles": 1534761148.0,
+        "cycles_var": 1.4,
+        "instructions": 402414540.0,
+        "instructions_var": 0.21,
+        "LLC-loads": 10449798.0,
+        "LLC-loads_var": 0.18,
+        "LLC-load-misses": 6281866.0,
+        "LLC-load-misses_var": 1.08
+      }
+    },
+    {
+      "N": 4000000,
+      "repeats": 50,
+      "type": "double",
+      "bytes": 64000000,
+      "basic": {
+        "task-clock": 936.838097,
+        "task-clock_var": 3.25,
+        "cycles": 3049859735.0,
+        "cycles_var": 3.53,
+        "instructions": 677577841.0,
+        "instructions_var": 0.21,
+        "cache-references": 22130867.0,
+        "cache-references_var": 0.35,
+        "cache-misses": 13062947.0,
+        "cache-misses_var": 1.65
+      },
+      "l1": {
+        "task-clock": 964.539999,
+        "task-clock_var": 1.62,
+        "cycles": 2976049317.0,
+        "cycles_var": 1.29,
+        "instructions": 677040319.0,
+        "instructions_var": 0.07,
+        "L1-dcache-loads": 132514767.0,
+        "L1-dcache-loads_var": 0.06,
+        "L1-dcache-load-misses": 29299767.0,
+        "L1-dcache-load-misses_var": 0.02
+      },
+      "llc": {
+        "task-clock": 965.386485,
+        "task-clock_var": 1.93,
+        "cycles": 3129900710.0,
+        "cycles_var": 2.18,
+        "instructions": 679165791.0,
+        "instructions_var": 0.33,
+        "LLC-loads": 21131443.0,
+        "LLC-loads_var": 0.4,
+        "LLC-load-misses": 12710798.0,
+        "LLC-load-misses_var": 1.11
+      }
+    },
+    {
+      "N": 16000000,
+      "repeats": 12,
+      "type": "float",
+      "bytes": 128000000,
+      "basic": {
+        "task-clock": 708.005627,
+        "task-clock_var": 1.11,
+        "cycles": 2171952476.0,
+        "cycles_var": 1.05,
+        "instructions": 899502464.0,
+        "instructions_var": 0.1,
+        "cache-references": 13188547.0,
+        "cache-references_var": 0.4,
+        "cache-misses": 7839297.0,
+        "cache-misses_var": 1.55
+      },
+      "l1": {
+        "task-clock": 726.594828,
+        "task-clock_var": 0.85,
+        "cycles": 2287961025.0,
+        "cycles_var": 2.46,
+        "instructions": 898279935.0,
+        "instructions_var": 0.47,
+        "L1-dcache-loads": 105161941.0,
+        "L1-dcache-loads_var": 0.84,
+        "L1-dcache-load-misses": 19769131.0,
+        "L1-dcache-load-misses_var": 0.23
+      },
+      "llc": {
+        "task-clock": 718.116774,
+        "task-clock_var": 1.66,
+        "cycles": 2252918299.0,
+        "cycles_var": 2.2,
+        "instructions": 893111572.0,
+        "instructions_var": 0.19,
+        "LLC-loads": 11767354.0,
+        "LLC-loads_var": 0.28,
+        "LLC-load-misses": 7120836.0,
+        "LLC-load-misses_var": 0.92
+      }
+    },
+    {
+      "N": 16000000,
+      "repeats": 12,
+      "type": "double",
+      "bytes": 256000000,
+      "basic": {
+        "task-clock": 1401.822342,
+        "task-clock_var": 1.7,
+        "cycles": 4470248837.0,
+        "cycles_var": 2.04,
+        "instructions": 1324516151.0,
+        "instructions_var": 0.2,
+        "cache-references": 27623186.0,
+        "cache-references_var": 0.24,
+        "cache-misses": 16531779.0,
+        "cache-misses_var": 0.62
+      },
+      "l1": {
+        "task-clock": 1359.364822,
+        "task-clock_var": 2.38,
+        "cycles": 4359778428.0,
+        "cycles_var": 3.65,
+        "instructions": 1321509723.0,
+        "instructions_var": 0.13,
+        "L1-dcache-loads": 220818865.0,
+        "L1-dcache-loads_var": 0.2,
+        "L1-dcache-load-misses": 39544188.0,
+        "L1-dcache-load-misses_var": 0.02
+      },
+      "llc": {
+        "task-clock": 1376.565018,
+        "task-clock_var": 0.62,
+        "cycles": 4394496941.0,
+        "cycles_var": 2.04,
+        "instructions": 1318217594.0,
+        "instructions_var": 0.14,
+        "LLC-loads": 24138578.0,
+        "LLC-loads_var": 0.37,
+        "LLC-load-misses": 14325922.0,
+        "LLC-load-misses_var": 0.54
+      }
+    }
+  ],
+  "stage7": {
+    "data": [
+      {
+        "N": 100000,
+        "stride": 512,
+        "repeats": 256000,
+        "pages": 195,
+        "accesses": 49920000,
+        "tlb": {
+          "task-clock": 675.727064,
+          "task-clock_var": 0.93,
+          "cycles": 2174072781.0,
+          "cycles_var": 0.67,
+          "instructions": 368537974.0,
+          "instructions_var": 0.03,
+          "dTLB-loads": 102262501.0,
+          "dTLB-loads_var": 0.12,
+          "dTLB-load-misses": 34671.0,
+          "dTLB-load-misses_var": 5.51
+        },
+        "basic": {
+          "task-clock": 741.523156,
+          "task-clock_var": 3.05,
+          "cycles": 2306504368.0,
+          "cycles_var": 4.6,
+          "instructions": 369126087.0,
+          "instructions_var": 0.04,
+          "cache-references": 137984269.0,
+          "cache-references_var": 0.79,
+          "cache-misses": 427661.0,
+          "cache-misses_var": 70.13
+        }
+      },
+      {
+        "N": 1000000,
+        "stride": 512,
+        "repeats": 25600,
+        "pages": 1953,
+        "accesses": 49996800,
+        "tlb": {
+          "task-clock": 3988.92952,
+          "task-clock_var": 0.41,
+          "cycles": 12619477125.0,
+          "cycles_var": 2.18,
+          "instructions": 436313536.0,
+          "instructions_var": 0.07,
+          "dTLB-loads": 111544069.0,
+          "dTLB-loads_var": 0.33,
+          "dTLB-load-misses": 82961873.0,
+          "dTLB-load-misses_var": 0.27
+        },
+        "basic": {
+          "task-clock": 4048.890043,
+          "task-clock_var": 0.84,
+          "cycles": 12662131072.0,
+          "cycles_var": 1.49,
+          "instructions": 437116016.0,
+          "instructions_var": 0.14,
+          "cache-references": 113697301.0,
+          "cache-references_var": 0.89,
+          "cache-misses": 99636010.0,
+          "cache-misses_var": 0.44
+        }
+      },
+      {
+        "N": 10000000,
+        "stride": 512,
+        "repeats": 2560,
+        "pages": 19531,
+        "accesses": 49999360,
+        "tlb": {
+          "task-clock": 4332.203633,
+          "task-clock_var": 0.64,
+          "cycles": 13578074512.0,
+          "cycles_var": 1.88,
+          "instructions": 877011721.0,
+          "instructions_var": 0.02,
+          "dTLB-loads": 162581027.0,
+          "dTLB-loads_var": 0.21,
+          "dTLB-load-misses": 86784348.0,
+          "dTLB-load-misses_var": 0.11
+        },
+        "basic": {
+          "task-clock": 4349.38031,
+          "task-clock_var": 0.26,
+          "cycles": 14017863880.0,
+          "cycles_var": 1.14,
+          "instructions": 873615051.0,
+          "instructions_var": 0.12,
+          "cache-references": 121323639.0,
+          "cache-references_var": 0.17,
+          "cache-misses": 103218082.0,
+          "cache-misses_var": 0.02
+        }
+      }
+    ],
+    "baseline": {
+      "N": 10000000,
+      "stride": 1,
+      "repeats": 20,
+      "pages": 19531,
+      "accesses": 200000000,
+      "tlb": {
+        "task-clock": 1172.696094,
+        "task-clock_var": 1.2,
+        "cycles": 3702178633.0,
+        "cycles_var": 2.15,
+        "instructions": 1007451048.0,
+        "instructions_var": 0.17,
+        "dTLB-loads": 178457071.0,
+        "dTLB-loads_var": 0.25,
+        "dTLB-load-misses": 571057.0,
+        "dTLB-load-misses_var": 0.78
+      },
+      "basic": {
+        "task-clock": 1176.817707,
+        "task-clock_var": 1.18,
+        "cycles": 3596105270.0,
+        "cycles_var": 1.53,
+        "instructions": 1004635798.0,
+        "instructions_var": 0.24,
+        "cache-references": 25118282.0,
+        "cache-references_var": 0.17,
+        "cache-misses": 14934856.0,
+        "cache-misses_var": 0.63
+      }
+    }
+  },
+  "stage8": {
+    "predictable": {
+      "task-clock": 1411.678047,
+      "task-clock_var": 0.6,
+      "cycles": 4329896602.0,
+      "cycles_var": 0.24,
+      "instructions": 8010223986.0,
+      "instructions_var": 0.0,
+      "branches": 1033934633.0,
+      "branches_var": 0.01,
+      "branch-misses": 105408.0,
+      "branch-misses_var": 1.68
+    },
+    "random": {
+      "task-clock": 2172.084503,
+      "task-clock_var": 3.03,
+      "cycles": 6524254051.0,
+      "cycles_var": 0.46,
+      "instructions": 8085861024.0,
+      "instructions_var": 0.01,
+      "branches": 1034942413.0,
+      "branches_var": 0.01,
+      "branch-misses": 50126317.0,
+      "branch-misses_var": 0.01
+    },
+    "n": 10000000,
+    "repeats": 10
+  },
+  "optional": {
+    "instructions": "n : 1000000\nrepeats : 10\nstride : 1\nCPU cycles:                         250500228\nInstructions retired:                70008820\nIPC:                                 0.279476  insn per cycle\nFrontend stall cycles:                      0\nFrontend stall cycles rate:              0.00% frontend cycles idle\nBackend stall cycles:                       0\nBackend stall cycles rate:               0.00% backend cycles idle\nStall cycles rate:                       0.00% stalled cycles per insn\nwarning: cannot create perf event: No such file or directory\nwarning: event 2 is not supported, skipped\nwarning: cannot create perf event: No such file or directory\nwarning: event 3 is not supported, skipped\n",
+    "branches": "n : 1000000\nrepeats : 10\nstride : 1\nInstructions retired:                70000505\nBranch prediction unit:                    63\nBranches                             10000277\nBranch-misses                              70\nBranch-miss rate                         0.00% of all branches\n",
+    "l1": "n : 1000000\nrepeats : 10\nstride : 1\nCache references:                      932176\nCache misses:                          844112\nCache misses rate:                      90.55% of all cache refs\nL1 caches:                           14403879\nL1 cache misses                       1221661\nL1 cache misse rate:                     8.48% of all L1 reads\n",
+    "tlb": "n : 1000000\nrepeats : 10\nstride : 1\nCache references:                      887024\nCache misses:                          857916\nCache misses rate:                      96.72% of all cache refs\nTLB cache read:                      15187728\nTLB cache read misses                   19186\nTLB cache read miss rate                 0.13% of all TLB reads\n"
+  }
+}

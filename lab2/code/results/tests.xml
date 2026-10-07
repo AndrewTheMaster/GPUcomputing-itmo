@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="7" failures="0" disabled="0" errors="0" time="0.255" timestamp="2026-10-06T12:23:51.675" name="AllTests">
+  <testsuite name="CPU" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-10-06T12:23:51.675">
+    <testcase name="KnownExample" file="/home/andrew/Documents/itmo/lab2/nvidia/gtest/test_algorithm.cu" line="58" status="run" result="completed" time="0." timestamp="2026-10-06T12:23:51.675" classname="CPU" />
+    <testcase name="RejectsCorruptedResult" file="/home/andrew/Documents/itmo/lab2/nvidia/gtest/test_algorithm.cu" line="64" status="run" result="completed" time="0." timestamp="2026-10-06T12:23:51.676" classname="CPU" />
+  </testsuite>
+  <testsuite name="Reference" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.15" timestamp="2026-10-06T12:23:51.676">
+    <testcase name="MatchesCPU" file="/home/andrew/Documents/itmo/lab2/nvidia/gtest/test_algorithm.cu" line="71" status="run" result="completed" time="0.15" timestamp="2026-10-06T12:23:51.676" classname="Reference" />
+  </testsuite>
+  <testsuite name="Student" tests="4" failures="0" disabled="0" skipped="0" errors="0" time="0.105" timestamp="2026-10-06T12:23:51.826">
+    <testcase name="KnownExample" file="/home/andrew/Documents/itmo/lab2/nvidia/gtest/test_algorithm.cu" line="93" status="run" result="completed" time="0." timestamp="2026-10-06T12:23:51.826" classname="Student" />
+    <testcase name="BoundariesAndBlocks" file="/home/andrew/Documents/itmo/lab2/nvidia/gtest/test_algorithm.cu" line="96" status="run" result="completed" time="0.015" timestamp="2026-10-06T12:23:51.827" classname="Student" />
+    <testcase name="PatternsAndUnequalInputs" file="/home/andrew/Documents/itmo/lab2/nvidia/gtest/test_algorithm.cu" line="104" status="run" result="completed" time="0.002" timestamp="2026-10-06T12:23:51.842" classname="Student" />
+    <testcase name="LargeInput" file="/home/andrew/Documents/itmo/lab2/nvidia/gtest/test_algorithm.cu" line="121" status="run" result="completed" time="0.087" timestamp="2026-10-06T12:23:51.844" classname="Student" />
+  </testsuite>
+</testsuites>
